@@ -1,36 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <div class="container m-5">
-        <form class="login-box">
-            <h2>Login</h2>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2 class="logo">MyPortfolio</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+    <!-- Hero Section -->
+    <section id="home" class="home">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Varsha</span></h1>
+            <p>A Web Developer & Designer</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer who loves building modern, interactive, 
+            and user-friendly websites. I specialize in HTML, CSS, JavaScript and responsive design.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A short description of your project.</p>
+                <a href="#" class="btn">View</a>
             </div>
 
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password" required>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>A short description of your project.</p>
+                <a href="#" class="btn">View</a>
             </div>
 
-            <button type="submit" class="btn">Login</button>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>A short description of your project.</p>
+                <a href="#" class="btn">View</a>
+            </div>
 
-            <p class="signup-text">
-                Don’t have an account? <a href="#">Sign up</a>
-            </p>
-        </form>
-    </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email me at: <strong>vparmar1076@gmail.com</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Varsha | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
